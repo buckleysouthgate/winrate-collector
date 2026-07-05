@@ -13,8 +13,10 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 FEEDS = {
-    "gets_all": "https://www.gets.govt.nz/ExternalRSSFeed.htm",
+    "vendorpanel_au_all": "https://www.vendorpanel.com.au/PublicTendersRssV2.aspx?mode=all",
+    "vendorpanel_nz_all": "https://www.vendorpanel.nz/PublicTendersRssV2.aspx?mode=all",
 }
+
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (WinrateCollector/0.2; low-volume research)"}
 STAMP = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H%M")
